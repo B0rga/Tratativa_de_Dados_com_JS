@@ -1,0 +1,104 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Roboto Mono', monospace;
+    background-color:darkslategray;
+    color:aliceblue;
+}
+
+article{
+    text-align: center;
+    margin-top: 40px;
+}
+
+header{
+    font-size: 24pt;
+    margin-bottom: 50px;
+}
+
+.campo{
+    background: none;
+    outline: none;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    font: normal 14pt 'Roboto Mono', monospace;
+    color: aliceblue;
+    margin-bottom: 20px;
+    padding: 6px;
+}
+
+.campo:invalid {
+    border-bottom: solid 2px grey;
+}
+
+.campo:hover{
+    border-bottom: solid 2px aliceblue;
+    transition: 0.2s;
+}
+
+.campo:valid {
+    border-bottom: solid 2px aliceblue;
+}
+
+#nome{
+    width: 280px;
+}
+
+#idade{
+    width: 90px;
+}
+
+#linguagem{
+    width: 390px;
+}
+
+input::placeholder{
+    color:grey;
+}
+
+input[type=button]{
+    margin-top: 40px;
+    margin-bottom: 40px;
+    background: none;
+    color:aliceblue;
+    font: normal 14pt 'Roboto Mono', monospace;
+    border-radius: 6px;
+    border: 2px solid aliceblue;
+    padding: 10px;
+    cursor: pointer;
+    width: 100px;
+}
+
+input[type=button]:hover{
+    background-color: aliceblue;
+    color: darkslategray;
+    transition: 0.2s;
+}
+
+#resultado{
+    font-size: 14pt;
+    border: 2px solid aliceblue;
+    width: 600px;
+    margin: 0 auto;
+    border-radius: 10px;
+    padding: 24px;
+    visibility: hidden;
+}
+
+input[type=number]::-webkit-inner-spin-button { 
+    -webkit-appearance: none;
+}
+
+input[type=number] { 
+    -moz-appearance: textfield;
+    appearance: textfield;
+}
+
+label{
+    font-size: 14pt;
+    padding: 4px;
+}
