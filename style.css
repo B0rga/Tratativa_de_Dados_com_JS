@@ -10,13 +10,23 @@ body{
 }
 
 article{
+    margin-top: 20px;
+    display: grid;
+    place-items: center;
+}
+
+section{
+    margin: 20px 0px 20px 0px;
+    width: 500px;
     text-align: center;
-    margin-top: 40px;
 }
 
 header{
     font-size: 24pt;
-    margin-bottom: 50px;
+}
+
+div{
+    display: flex;
 }
 
 .campo{
@@ -27,8 +37,9 @@ header{
     border-right: none;
     font: normal 14pt 'Roboto Mono', monospace;
     color: aliceblue;
-    margin-bottom: 20px;
-    padding: 6px;
+    margin-top: 20px;
+    padding-bottom: 4px;
+    width: 100%;
 }
 
 .campo:invalid {
@@ -44,25 +55,21 @@ header{
     border-bottom: solid 2px aliceblue;
 }
 
-#nome{
-    width: 280px;
-}
-
 #idade{
-    width: 90px;
+    width: 100px;
+    margin-left: 10px;
 }
 
-#linguagem{
-    width: 390px;
+input[type=radio]{
+    cursor: pointer;
+    margin: 0px 4px 0px 4px;
 }
 
-input::placeholder{
-    color:grey;
+label{
+    font-size: 14pt;
 }
 
 input[type=button]{
-    margin-top: 40px;
-    margin-bottom: 40px;
     background: none;
     color:aliceblue;
     font: normal 14pt 'Roboto Mono', monospace;
@@ -82,11 +89,10 @@ input[type=button]:hover{
 #resultado{
     font-size: 14pt;
     border: 2px solid aliceblue;
-    width: 600px;
-    margin: 0 auto;
     border-radius: 10px;
-    padding: 24px;
     visibility: hidden;
+    padding: 24px;
+    width: 600px;
 }
 
 input[type=number]::-webkit-inner-spin-button { 
@@ -98,7 +104,3 @@ input[type=number] {
     appearance: textfield;
 }
 
-label{
-    font-size: 14pt;
-    padding: 4px;
-}

@@ -12,17 +12,23 @@
             <h1>Formulário</h1>
         </header>
         <section>
-            <input class="campo" type="text" placeholder="Nome" id="nome" autocomplete="off" required>
-            <input class="campo" type="number" placeholder="Idade" id="idade" autocomplete="off" required><br>
-            <input class="campo" type="text" placeholder="Linguagem de programação atual" id="linguagem" autocomplete="off" required><br><br>
+            <div>
+                <input class="campo" type="text" placeholder="Nome" id="nome" autocomplete="off" required>
+                <input class="campo" type="number" placeholder="Idade" id="idade" autocomplete="off" required>
+            </div>
+            <input class="campo" type="text" placeholder="Linguagem de programação atual" id="linguagem" autocomplete="off" required>
+        </section>
+        <section>
             <label>Você gosta de estudar programação?</label>
             <input type="radio" name="option" id ="yes"><label>Sim</label>
-            <input type="radio" name="option" id ="no"><label>Não</label><br>
-            <input type="button" value="Enviar" onclick="Enviar()">
+            <input type="radio" name="option" id ="no"><label>Não</label>
+        </section>
+        <section>
+            <input type="button" value="Enviar" onclick="pessoa.EnviarDados()">
         </section>
         <section id="resultado">
-            <p id="res"></p>
-            <p id="res2"></p>
+            <p name="res"></p>
+            <p name="res"></p>
         </section>
     </article>    
 <script src="script.js"></script>
